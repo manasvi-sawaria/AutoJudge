@@ -1,5 +1,7 @@
 AutoJudge
 
+ App link: https://autojudge-difficulty-predictor.streamlit.app/
+
 This project uses machine learning to estimate how difficult a programming problem is. Given a problem statement, it outputs a difficulty category (easy, medium, or hard) along with a numerical score from 1 to 10.
 
 
