@@ -38,7 +38,7 @@ Classification
 Data was partitioned into training (70%), validation (15%), and test (15%) sets.
 
 Logistic Regression
-Achieved approximately 48% accuracy
+Achieved approximately 48% accuracy.
 
 Random Forest Classifier
 Achieved 52.19% accuracy
@@ -101,7 +101,7 @@ XGBoost handles this better by learning complex patterns in the data.
 
 Dual-Head Model
 
-I have also tried dual-head prediction architecture where a shared backbone learns common representations and a classification head predicts the problem difficulty class (Easy, Medium, Hard). The classification head achieves an overall accuracy of 51.64%, which is reasonable given the subjective and overlapping nature of difficulty labels.
+I have also tried dual-head prediction architecture where a shared backbone learns common representations and a classification head predicts the problem difficulty class (Easy, Medium, Hard). The classification head achieved an overall accuracy of 51.64%, which is reasonable given the subjective and overlapping nature of difficulty labels.
 
 Confusion Matrix (Dual-Head Classification)
 ```
@@ -115,7 +115,7 @@ medium      33   185     63
  
  The confusion matrix shows that the model predicts the Hard class most reliably, while Medium problems are often confused with Hard, indicating overlap in intermediate difficulty levels.
 
- The regression head achieves a MAE of 1.7 and an RMSE of 2.06.
+ The regression head achieved a MAE of 1.7 and an RMSE of 2.06.
 
 
 
