@@ -22,7 +22,7 @@ Each entry contains:
 
 Text Preprocessing
 
-All text fields (title, description, input/output specs) were merged into one combined text. Missing or empty values were handled by substituting empty strings.
+All text fields (title, description, input/output specs) were merged into one combined text. Texts were cleaned by converting to lowercase, removing URLs and HTML tags, and normalizing whitespace. Missing or empty values were handled by substituting empty strings.
 
 
 Feature Extraction
@@ -38,7 +38,7 @@ Classification
 Data was partitioned into training (70%), validation (15%), and test (15%) sets.
 
 Logistic Regression
-Achieved approximately 48% accuracy
+Achieved approximately 48% accuracy.
 
 Random Forest Classifier
 Achieved 52.19% accuracy
@@ -49,15 +49,13 @@ Class-wise breakdown:
 F1-Score (Macro): 0.4860
 
 Confusion Matrix (Random Forest Classification)
-
-           Predicted
-           easy  hard  medium
-Actual
-easy        39    52     24
-hard        20   240     31
-medium      22   146     43
-
-
+```
+               Predicted
+             easy  hard  medium
+Actual easy    39    52     24
+Actual hard    20   240     31
+Actual medium  22   146     43
+```
 
 XGBoost Classifier
 Achieved 50.729% accuracy
@@ -68,12 +66,14 @@ Class-wise breakdown:
 F1-Score : 0.41 for easy, 0.63 for hard and 0.32 for medium.
 Confusion Matrix (xgboost Classification)
 
+```
            Predicted
            easy  hard  medium
-Actual
+Actual     
 easy        55    63     35
 hard        15   291     83
 medium      24   190     67
+```
 
 
 
@@ -101,20 +101,21 @@ XGBoost handles this better by learning complex patterns in the data.
 
 Dual-Head Model
 
-I have also tried dual-head prediction architecture where a shared backbone learns common representations and a classification head predicts the problem difficulty class (Easy, Medium, Hard). The classification head achieves an overall accuracy of 51.64%, which is reasonable given the subjective and overlapping nature of difficulty labels.
+I have also tried dual-head prediction architecture where a shared backbone learns common representations and a classification head predicts the problem difficulty class (Easy, Medium, Hard). The classification head achieved an overall accuracy of 51.64%, which is reasonable given the subjective and overlapping nature of difficulty labels.
 
 Confusion Matrix (Dual-Head Classification)
-
+```
            Predicted
            easy  hard  medium
 Actual
 easy        51    62     40
 hard         9   311     69
 medium      33   185     63
+```
  
  The confusion matrix shows that the model predicts the Hard class most reliably, while Medium problems are often confused with Hard, indicating overlap in intermediate difficulty levels.
 
- The regression head achieves a MAE of 1.7 and an RMSE of 2.06
+ The regression head achieved a MAE of 1.7 and an RMSE of 2.06.
 
 
 
@@ -162,6 +163,6 @@ Running Locally
  Video link: 
 
 Submitted by:
-Manasvi Sawaria
+Manasvi Sawaria,
 Chemical Engineering, IIT Roorkee (2nd Year)
 manasvi_s@ch.iitr.ac.in
