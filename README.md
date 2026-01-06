@@ -66,12 +66,14 @@ Class-wise breakdown:
 F1-Score : 0.41 for easy, 0.63 for hard and 0.32 for medium.
 Confusion Matrix (xgboost Classification)
 
+'''
            Predicted
            easy  hard  medium
 Actual     
 easy        55    63     35
 hard        15   291     83
 medium      24   190     67
+'''
 
 
 
@@ -102,13 +104,14 @@ Dual-Head Model
 I have also tried dual-head prediction architecture where a shared backbone learns common representations and a classification head predicts the problem difficulty class (Easy, Medium, Hard). The classification head achieves an overall accuracy of 51.64%, which is reasonable given the subjective and overlapping nature of difficulty labels.
 
 Confusion Matrix (Dual-Head Classification)
-
+'''
            Predicted
            easy  hard  medium
 Actual
 easy        51    62     40
 hard         9   311     69
 medium      33   185     63
+'''
  
  The confusion matrix shows that the model predicts the Hard class most reliably, while Medium problems are often confused with Hard, indicating overlap in intermediate difficulty levels.
 
