@@ -22,7 +22,7 @@ Each entry contains:
 
 Text Preprocessing
 
-All text fields (title, description, input/output specs) were merged into one combined text. Missing or empty values were handled by substituting empty strings.
+All text fields (title, description, input/output specs) were merged into one combined text. Texts were cleaned by converting to lowercase, removing URLs and HTML tags, and normalizing whitespace. Missing or empty values were handled by substituting empty strings.
 
 
 Feature Extraction
