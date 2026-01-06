@@ -49,15 +49,13 @@ Class-wise breakdown:
 F1-Score (Macro): 0.4860
 
 Confusion Matrix (Random Forest Classification)
-
-           Predicted
-           easy  hard  medium
-Actual
-easy        39    52     24
-hard        20   240     31
-medium      22   146     43
-
-
+```
+               Predicted
+             easy  hard  medium
+Actual easy    39    52     24
+Actual hard    20   240     31
+Actual medium  22   146     43
+```
 
 XGBoost Classifier
 Achieved 50.729% accuracy
@@ -71,9 +69,9 @@ Confusion Matrix (xgboost Classification)
            Predicted
            easy  hard  medium
 Actual     
-easy    ''' 55    63     35
+easy        55    63     35
 hard        15   291     83
-medium      24   190     67'''
+medium      24   190     67
 
 
 
