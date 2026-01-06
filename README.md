@@ -70,10 +70,10 @@ Confusion Matrix (xgboost Classification)
 
            Predicted
            easy  hard  medium
-Actual
-easy        55    63     35
+Actual     
+easy    ''' 55    63     35
 hard        15   291     83
-medium      24   190     67
+medium      24   190     67'''
 
 
 
@@ -114,7 +114,7 @@ medium      33   185     63
  
  The confusion matrix shows that the model predicts the Hard class most reliably, while Medium problems are often confused with Hard, indicating overlap in intermediate difficulty levels.
 
- The regression head achieves a MAE of 1.7 and an RMSE of 2.06
+ The regression head achieves a MAE of 1.7 and an RMSE of 2.06.
 
 
 
@@ -162,6 +162,6 @@ Running Locally
  Video link: 
 
 Submitted by:
-Manasvi Sawaria
+Manasvi Sawaria,
 Chemical Engineering, IIT Roorkee (2nd Year)
 manasvi_s@ch.iitr.ac.in
