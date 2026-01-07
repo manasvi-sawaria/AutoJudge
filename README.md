@@ -160,7 +160,7 @@ Running Locally
    
    Open the URL shown in terminal in the browser (eg., http://localhost:8501)
  
- Video link: 
+ Video link: https://drive.google.com/file/d/1ekA1D_kk-ARh__hT0r4fwvWulmOSu-bN/view?usp=drivesdk
 
 Submitted by:
 Manasvi Sawaria,
