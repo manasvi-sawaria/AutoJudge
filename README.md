@@ -164,5 +164,5 @@ Running Locally
 
 Submitted by:
 Manasvi Sawaria,
-Chemical Engineering, IIT Roorkee (2nd Year)
+Indian Institute of Technology Roorkee (2nd Year)
 manasvi_s@ch.iitr.ac.in
